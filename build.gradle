@@ -3,6 +3,10 @@ plugins {
   id "com.moowork.node" version "1.2.0"
 }
 
+node {
+	download = true
+}
+
 //declare a build task
 task build
 
