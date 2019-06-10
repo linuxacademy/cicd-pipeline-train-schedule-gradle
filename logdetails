@@ -1,0 +1,220 @@
+10:42:06.367 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized native services in: /home/cloud_user/.gradle/native
+10:42:06.641 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Executing build 8d30bdf3-71b9-478e-bf9b-42236dc59a87.1 in daemon client {pid=4961}
+10:42:06.649 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
+10:42:06.649 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+10:42:06.650 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+10:42:06.651 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:10b8:e7ff:fe24:2b66%eth0
+10:42:06.651 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /10.0.1.130
+10:42:06.652 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface eth0
+10:42:06.652 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+10:42:06.652 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+10:42:06.653 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? false
+10:42:06.653 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo
+10:42:06.654 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+10:42:06.662 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+10:42:06.665 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+10:42:06.678 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+10:42:06.686 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Attempting to connect to [4c92a895-b97d-4272-b9a8-0cef56bf5054 port:42862, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]].
+10:42:06.687 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Trying to connect to address /0:0:0:0:0:0:0:1.
+10:42:06.691 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Connected to address /0:0:0:0:0:0:0:1:42862.
+10:42:06.726 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Connected to daemon DaemonInfo{pid=4729, address=[4c92a895-b97d-4272-b9a8-0cef56bf5054 port:42862, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1560177658659, context=DefaultDaemonContext[uid=cc3d16f4-6fae-4d72-9527-05aef7ecf8d7,javaHome=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre,daemonRegistryDir=/home/cloud_user/.gradle/daemon,pid=4729,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=8d30bdf3-71b9-478e-bf9b-42236dc59a87.1, currentDir=/home/cloud_user/cicd-pipeline-train-schedule-gradle}.
+10:42:06.727 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Build
+10:42:06.808 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result org.gradle.launcher.daemon.protocol.BuildStarted@568ff82 from daemon DaemonInfo{pid=4729, address=[4c92a895-b97d-4272-b9a8-0cef56bf5054 port:42862, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1560177658659, context=DefaultDaemonContext[uid=cc3d16f4-6fae-4d72-9527-05aef7ecf8d7,javaHome=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre,daemonRegistryDir=/home/cloud_user/.gradle/daemon,pid=4729,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} (build should be starting).
+10:42:06.787 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 4729). The daemon log file: /home/cloud_user/.gradle/daemon/4.6/daemon-4729.out.log
+10:42:06.813 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 6th build in daemon [uptime: 17 mins 47.392 secs, performance: 95%]
+10:42:06.816 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+10:42:06.817 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=cc3d16f4-6fae-4d72-9527-05aef7ecf8d7,javaHome=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre,daemonRegistryDir=/home/cloud_user/.gradle/daemon,pid=4729,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+10:42:06.818 [INFO] [org.gradle.internal.work.DefaultWorkerLeaseService] Using 1 worker leases.
+10:42:06.818 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for fileHashes, path /home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@70e03d0d
+10:42:06.850 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes)
+10:42:06.850 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes).
+10:42:06.861 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes).
+10:42:06.863 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Run build' started
+10:42:06.863 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 started (1 worker(s) in use).
+10:42:06.863 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 5: acquired lock on root.1
+10:42:06.863 [INFO] [org.gradle.internal.buildevents.BuildLogger] Starting Build
+10:42:06.863 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Gradle user home: /home/cloud_user/.gradle
+10:42:06.863 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Current dir: /home/cloud_user/cicd-pipeline-train-schedule-gradle
+10:42:06.863 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Settings file: null
+10:42:06.863 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Build file: null
+10:42:06.863 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Load build' started
+10:42:06.864 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Starting to build the build sources.
+10:42:06.864 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+10:42:06.864 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Evaluate settings' started
+10:42:06.864 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+10:42:06.864 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+10:42:06.864 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Apply script settings.gradle to settings 'cicd-pipeline-train-schedule-gradle'' started
+10:42:06.865 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on cp_settings remapped class cache for dtjaxiizg4mieqv0mkm6wy51x (/home/cloud_user/.gradle/caches/4.6/scripts-remapped/settings_1mru51ky48qi9o6pfgd3gh6bo/dtjaxiizg4mieqv0mkm6wy51x/cp_settingsdf5583fde4f7f1f2f3f5ea117e2cdff1).
+10:42:06.865 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cp_settings remapped class cache for dtjaxiizg4mieqv0mkm6wy51x (/home/cloud_user/.gradle/caches/4.6/scripts-remapped/settings_1mru51ky48qi9o6pfgd3gh6bo/dtjaxiizg4mieqv0mkm6wy51x/cp_settingsdf5583fde4f7f1f2f3f5ea117e2cdff1).
+10:42:06.865 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_settings remapped class cache for dtjaxiizg4mieqv0mkm6wy51x (/home/cloud_user/.gradle/caches/4.6/scripts-remapped/settings_1mru51ky48qi9o6pfgd3gh6bo/dtjaxiizg4mieqv0mkm6wy51x/cp_settingsdf5583fde4f7f1f2f3f5ea117e2cdff1).
+10:42:06.866 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on settings remapped class cache for dtjaxiizg4mieqv0mkm6wy51x (/home/cloud_user/.gradle/caches/4.6/scripts-remapped/settings_1mru51ky48qi9o6pfgd3gh6bo/dtjaxiizg4mieqv0mkm6wy51x/settingsdf5583fde4f7f1f2f3f5ea117e2cdff1).
+10:42:06.866 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on settings remapped class cache for dtjaxiizg4mieqv0mkm6wy51x (/home/cloud_user/.gradle/caches/4.6/scripts-remapped/settings_1mru51ky48qi9o6pfgd3gh6bo/dtjaxiizg4mieqv0mkm6wy51x/settingsdf5583fde4f7f1f2f3f5ea117e2cdff1).
+10:42:06.866 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on settings remapped class cache for dtjaxiizg4mieqv0mkm6wy51x (/home/cloud_user/.gradle/caches/4.6/scripts-remapped/settings_1mru51ky48qi9o6pfgd3gh6bo/dtjaxiizg4mieqv0mkm6wy51x/settingsdf5583fde4f7f1f2f3f5ea117e2cdff1).
+10:42:06.871 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache fileHashes.bin (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes/fileHashes.bin)
+10:42:06.891 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Apply script settings.gradle to settings 'cicd-pipeline-train-schedule-gradle''
+10:42:06.891 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Apply script settings.gradle to settings 'cicd-pipeline-train-schedule-gradle'' completed
+10:42:06.892 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.027 secs
+10:42:06.892 [INFO] [org.gradle.internal.buildevents.BuildLogger] Settings evaluated using settings file '/home/cloud_user/cicd-pipeline-train-schedule-gradle/settings.gradle'.
+10:42:06.892 [DEBUG] [org.gradle.caching.configuration.internal.DefaultBuildCacheConfiguration] Found class org.gradle.caching.local.internal.DirectoryBuildCacheServiceFactory registered for class org.gradle.caching.local.DirectoryBuildCache
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Finalize build cache configuration' started
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Finalize build cache configuration'
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Finalize build cache configuration' completed
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Evaluate settings'
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Evaluate settings' completed
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Load build'
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Load build' completed
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Configure build' started
+10:42:06.892 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Load projects' started
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' from state Registered to Created
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Discovered.
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Created.
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks' (hidden = false)
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element 'tasks' from state Registered to Created
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Running model element 'tasks' rule action Project.<init>.tasks()
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Mutating tasks using Project.<init>.tasks()
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element 'tasks' to state Discovered.
+10:42:06.893 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Running model element 'tasks' rule action Project.<init>.tasks()
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Mutating tasks using Project.<init>.tasks()
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element 'tasks' to state Created.
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'serviceRegistry' (hidden = true)
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'buildDir' (hidden = true)
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'projectIdentifier' (hidden = true)
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'extensionContainer' (hidden = true)
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'fileOperations' (hidden = true)
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'sourceDirectorySetFactory' (hidden = true)
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'taskFactory' (hidden = true)
+10:42:06.894 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'instantiator' (hidden = true)
+10:42:06.895 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'typeConverter' (hidden = true)
+10:42:06.895 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'nodeInitializerRegistry' (hidden = true)
+10:42:06.895 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'structBindingsStore' (hidden = true)
+10:42:06.895 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'proxyFactory' (hidden = true)
+10:42:06.895 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'schemaStore' (hidden = true)
+10:42:06.895 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: /home/cloud_user/cicd-pipeline-train-schedule-gradle/gradle.properties
+10:42:06.895 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] project property file does not exists. We continue!
+10:42:06.895 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Load projects'
+10:42:06.895 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Load projects' completed
+10:42:06.895 [INFO] [org.gradle.internal.buildevents.BuildLogger] Projects loaded. Root project using build file '/home/cloud_user/cicd-pipeline-train-schedule-gradle/build.gradle'.
+10:42:06.895 [INFO] [org.gradle.internal.buildevents.BuildLogger] Included projects: [root project 'cicd-pipeline-train-schedule-gradle']
+10:42:06.895 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Execute 'rootProject {}' action' started
+10:42:06.896 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Cross-configure project :' started
+10:42:06.896 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Cross-configure project :'
+10:42:06.896 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Cross-configure project :' completed
+10:42:06.896 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Execute 'rootProject {}' action'
+10:42:06.896 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Execute 'rootProject {}' action' completed
+10:42:06.896 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Configure project :' started
+10:42:06.896 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.init' (hidden = false)
+10:42:06.896 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.wrapper' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Apply plugin org.gradle.help-tasks to root project 'cicd-pipeline-train-schedule-gradle'' started
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.help' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.projects' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.tasks' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.properties' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.dependencyInsight' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.dependencies' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.buildEnvironment' (hidden = false)
+10:42:06.897 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.components' (hidden = false)
+10:42:06.898 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.model' (hidden = false)
+10:42:06.898 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.dependentComponents' (hidden = false)
+10:42:06.898 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Apply plugin org.gradle.help-tasks to root project 'cicd-pipeline-train-schedule-gradle''
+10:42:06.898 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Apply plugin org.gradle.help-tasks to root project 'cicd-pipeline-train-schedule-gradle'' completed
+10:42:06.898 [INFO] [org.gradle.configuration.project.BuildScriptProcessor] Evaluating root project 'cicd-pipeline-train-schedule-gradle' using build file '/home/cloud_user/cicd-pipeline-train-schedule-gradle/build.gradle'.
+10:42:06.898 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Apply script build.gradle to root project 'cicd-pipeline-train-schedule-gradle'' started
+10:42:06.899 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/cloud_user/.m2/repository
+10:42:06.900 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-1.1/results, path /home/cloud_user/.gradle/caches/transforms-1/metadata-1.1/results.bin, access org.gradle.cache.internal.DefaultCacheAccess@1e98990a
+10:42:06.953 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for Artifact transforms cache (/home/cloud_user/.gradle/caches/transforms-1)
+10:42:06.954 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on Artifact transforms cache (/home/cloud_user/.gradle/caches/transforms-1).
+10:42:06.965 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on Artifact transforms cache (/home/cloud_user/.gradle/caches/transforms-1).
+10:42:06.966 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve dependencies of detachedConfiguration1' started
+10:42:06.969 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultArtifactDependencyResolver] Resolving configuration 'detachedConfiguration1'
+10:42:06.969 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.ResolvedArtifactCaches] Creating new in-memory cache for repo 'Gradle Central Plugin Repository' [8ae629c38e67401a3e81c38615c26d84].
+10:42:06.970 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration unspecified:unspecified:unspecified(detachedConfiguration1).
+10:42:06.970 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-2.53/module-metadata, path /home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@2805feaa
+10:42:06.970 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for artifact cache (/home/cloud_user/.gradle/caches/modules-2)
+10:42:06.970 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/cloud_user/.gradle/caches/modules-2).
+10:42:06.981 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on artifact cache (/home/cloud_user/.gradle/caches/modules-2).
+10:42:06.981 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-metadata.bin (/home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-metadata.bin)
+10:42:06.982 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 using repositories [Gradle Central Plugin Repository]
+10:42:06.982 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.moowork.node:com.moowork.node.gradle.plugin:1.2.0' in 'Gradle Central Plugin Repository'
+10:42:06.982 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 from Maven repository 'Gradle Central Plugin Repository'
+10:42:06.982 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.moowork.node:com.moowork.node.gradle.plugin:1.2.0(default).
+10:42:06.982 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] com.moowork.node:com.moowork.node.gradle.plugin:1.2.0(default) has no transitive incoming edges. ignoring outgoing edges.
+10:42:06.982 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-2.53/module-artifacts, path /home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-artifacts.bin, access org.gradle.cache.internal.DefaultCacheAccess@2805feaa
+10:42:06.983 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-artifacts.bin (/home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-artifacts.bin)
+10:42:06.983 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.oldresult.TransientConfigurationResultsBuilder] Flushing resolved configuration data in Binary store in /tmp/gradle4831272802314953798.bin. Wrote root 2.
+10:42:06.983 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Resolve dependencies of detachedConfiguration1'
+10:42:06.983 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve dependencies of detachedConfiguration1' completed
+10:42:06.984 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve dependencies of :classpath' started
+10:42:06.984 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultArtifactDependencyResolver] Resolving configuration ':classpath'
+10:42:06.984 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.ResolvedArtifactCaches] Reusing in-memory cache for repo 'Gradle Central Plugin Repository' [8ae629c38e67401a3e81c38615c26d84].
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration :cicd-pipeline-train-schedule-gradle:unspecified(classpath).
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 using repositories [Gradle Central Plugin Repository]
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.moowork.node:com.moowork.node.gradle.plugin:1.2.0' in 'Gradle Central Plugin Repository'
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 from Maven repository 'Gradle Central Plugin Repository'
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.moowork.node:com.moowork.node.gradle.plugin:1.2.0(default).
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.moowork.gradle:gradle-node-plugin:1.2.0 using repositories [Gradle Central Plugin Repository]
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.moowork.gradle:gradle-node-plugin:1.2.0' in 'Gradle Central Plugin Repository'
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.moowork.gradle:gradle-node-plugin:1.2.0 from Maven repository 'Gradle Central Plugin Repository'
+10:42:06.985 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.moowork.gradle:gradle-node-plugin:1.2.0(runtime).
+10:42:06.986 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.oldresult.TransientConfigurationResultsBuilder] Flushing resolved configuration data in Binary store in /tmp/gradle4831272802314953798.bin. Wrote root 2.
+10:42:06.986 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Resolve dependencies of :classpath'
+10:42:06.986 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve dependencies of :classpath' completed
+10:42:06.986 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 configuration default from candidates [com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 configuration default] for {}
+10:42:06.986 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.moowork.gradle:gradle-node-plugin:1.2.0 configuration runtime from candidates [com.moowork.gradle:gradle-node-plugin:1.2.0 configuration runtime] for {}
+10:42:06.986 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' started
+10:42:07.017 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.3 started (1 worker(s) in use).
+10:42:07.017 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 5: acquired lock on root.1.2.3
+10:42:07.017 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve gradle-node-plugin.jar (com.moowork.gradle:gradle-node-plugin:1.2.0)' started
+10:42:07.017 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-2.53/module-artifact, path /home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-artifact.bin, access org.gradle.cache.internal.DefaultCacheAccess@2805feaa
+10:42:07.017 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-artifact.bin (/home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-artifact.bin)
+10:42:07.017 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'gradle-node-plugin.jar (com.moowork.gradle:gradle-node-plugin:1.2.0)' in resolver cache: /home/cloud_user/.gradle/caches/modules-2/files-2.1/com.moowork.gradle/gradle-node-plugin/1.2.0/99efdc6275e52c72a2023a655af500eace21c50d/gradle-node-plugin-1.2.0.jar
+10:42:07.017 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Resolve gradle-node-plugin.jar (com.moowork.gradle:gradle-node-plugin:1.2.0)'
+10:42:07.017 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve gradle-node-plugin.jar (com.moowork.gradle:gradle-node-plugin:1.2.0)' completed
+10:42:07.017 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.3 completed (1 worker(s) in use)
+10:42:07.017 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 5: released lock on root.1.2.3
+10:42:07.018 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Resolve files of :classpath'
+10:42:07.018 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' completed
+10:42:07.018 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 configuration default from candidates [com.moowork.node:com.moowork.node.gradle.plugin:1.2.0 configuration default] for {}
+10:42:07.018 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.moowork.gradle:gradle-node-plugin:1.2.0 configuration runtime from candidates [com.moowork.gradle:gradle-node-plugin:1.2.0 configuration runtime] for {}
+10:42:07.018 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' started
+10:42:07.018 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Resolve files of :classpath'
+10:42:07.018 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' completed
+10:42:07.043 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Apply plugin com.moowork.node to root project 'cicd-pipeline-train-schedule-gradle'' started
+10:42:07.045 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.npmInstall' (hidden = false)
+10:42:07.049 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.yarn' (hidden = false)
+10:42:07.050 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.nodeSetup' (hidden = false)
+10:42:07.051 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.npmSetup' (hidden = false)
+10:42:07.051 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Registering model element 'tasks.yarnSetup' (hidden = false)
+10:42:07.051 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Apply plugin com.moowork.node to root project 'cicd-pipeline-train-schedule-gradle''
+10:42:07.051 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Build operation 'Apply plugin com.moowork.node to root project 'cicd-pipeline-train-schedule-gradle'' completed
+10:42:07.052 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Apply script build.gradle to root project 'cicd-pipeline-train-schedule-gradle''
+10:42:07.052 [DEBUG] [org.gradle.configuration.project.BuildScriptProcessor] Timing: Running the build script took 0.154 secs
+10:42:07.053 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Configure project :'
+10:42:07.053 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Configure build'
+10:42:07.055 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 completed (0 worker(s) in use)
+10:42:07.055 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 5: released lock on root.1
+10:42:07.055 [DEBUG] [org.gradle.internal.progress.DefaultBuildOperationExecutor] Completing Build operation 'Run build'
+10:42:07.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+10:42:07.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+10:42:07.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.0 secs
+10:42:07.056 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopping 0 deployment handles
+10:42:07.056 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopped deployment handles
+10:42:07.056 [INFO] [org.gradle.cache.internal.DefaultPersistentDirectoryCache] VCS Checkout Cache (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/vcsWorkingDirs) has not been cleaned up in 0 days
+10:42:07.056 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache VCS Checkout Cache (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/vcsWorkingDirs) was closed 0 times.
+10:42:07.079 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (/home/cloud_user/.gradle/caches/transforms-1)
+10:42:07.079 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (/home/cloud_user/.gradle/caches/transforms-1).
+10:42:07.079 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (/home/cloud_user/.gradle/caches/4.6/generated-gradle-jars) was closed 0 times.
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes)
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes/fileHashes.bin)
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/home/cloud_user/cicd-pipeline-train-schedule-gradle/.gradle/4.6/fileHashes).
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (/home/cloud_user/.gradle/caches/modules-2)
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-metadata.bin)
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (/home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-artifact.bin)
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifacts.bin (/home/cloud_user/.gradle/caches/modules-2/metadata-2.53/module-artifacts.bin)
+10:42:07.081 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/cloud_user/.gradle/caches/modules-2).
+10:42:07.081 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+10:42:07.230 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientInputForwarder] Dispatching close input message: org.gradle.launcher.daemon.protocol.CloseInput@1dbaa9e7
+10:42:07.230 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 12: dispatching class org.gradle.launcher.daemon.protocol.CloseInput
+10:42:07.253 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result Failure[value=org.gradle.initialization.ReportedException: org.gradle.internal.exceptions.LocationAwareException: Build file '/home/cloud_user/cicd-pipeline-train-schedule-gradle/build.gradle' line: 9
+A problem occurred evaluating root project 'cicd-pipeline-train-schedule-gradle'.] from daemon DaemonInfo{pid=4729, address=[4c92a895-b97d-4272-b9a8-0cef56bf5054 port:42862, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1560177658659, context=DefaultDaemonContext[uid=cc3d16f4-6fae-4d72-9527-05aef7ecf8d7,javaHome=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre,daemonRegistryDir=/home/cloud_user/.gradle/daemon,pid=4729,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} (build should be done).
+10:42:07.254 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Finished
+10:42:07.255 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: connection stop
