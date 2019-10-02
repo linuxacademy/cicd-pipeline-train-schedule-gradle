@@ -3,7 +3,7 @@ var userListData = [];
 $(document).ready(function() {
 
   populateTrains();
-
+  console.log('test');
 });
 
 function populateTrains() {
