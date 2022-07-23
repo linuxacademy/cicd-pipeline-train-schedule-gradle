@@ -8,5 +8,16 @@ pipeline {
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Testing Stage'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy Stage'
+            }
+        }
+
     }
 }
