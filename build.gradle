@@ -1,0 +1,41 @@
+// This application is built in node.js, and there is a plugin for it in Gradle that does
+// a lot of the work for us as far as dealing with node.js builds. We're calling in that
+// plugin here
+plugins {
+  id "com.moowork.node" version "1.2.0"
+}
+
+// We've also got to confgure the plugin a little bit. This line will instruct the node plugin
+// to download and install node.js and npm locally, for this particular project. It ensures that
+// those are installed during the build, but not system-wide, just within this directory.
+node {
+  download = true
+}
+
+// Whenever we call the build task (it's a task called build) which will run any and all
+// other tasks that are required to actually call the build "built."
+task build
+
+task zip(type: Zip) {
+            from ('.') {
+                include "*"
+                include "bin/**"
+                include "data/**"
+                include "node_modules/**"
+                include "public/**"
+                include "routes/**"
+                include "views/**"
+            }
+            destinationDir(file("dist"))
+            baseName "trainSchedule"
+        }
+
+        build.dependsOn zip
+        zip.dependsOn npm_build
+
+
+// All we need to do, in order for this build to actually run, is to call some of the tasks
+// built in to the node.js and npm plugins. We're going to call them here.
+build.dependsOn npm_build
+npm_build.dependsOn npm_test
+npm_test.dependsOn npmInstall
