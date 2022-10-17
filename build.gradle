@@ -37,5 +37,6 @@ task zip(type: Zip) {
 // All we need to do, in order for this build to actually run, is to call some of the tasks
 // built in to the node.js and npm plugins. We're going to call them here.
 build.dependsOn npm_build
+npm_build.dependsOn npmInstall
 npm_build.dependsOn npm_test
 npm_test.dependsOn npmInstall
