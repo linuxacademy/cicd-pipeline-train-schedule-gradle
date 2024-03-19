@@ -14,4 +14,4 @@ Then, you can run the app with:
 
 Once it is running, you can access it in a browser at [http://localhost:3000](http://localhost:3000)
 
-This is a test line added to check Jenkins auto build, triggered after making changes 
+Test changes for automated build in Jenkins
